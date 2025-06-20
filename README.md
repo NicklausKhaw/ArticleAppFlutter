@@ -1,18 +1,32 @@
-<<<<<<< HEAD
 # Article App Flutter
 
-A Flutter application built using the MVVM (Model-View-ViewModel) architecture pattern.
+This is a Flutter app to view articles from the New York Times Most Popular API, built using the MVVM (Model-View-ViewModel) architecture.
 
-## Project Structure
+## Features
 
-```
-lib/
-├── main.dart              # Application entry point
-├── views/                 # UI components (Views)
-│   └── home_page.dart     # Home page widget
-└── viewmodels/            # Business logic (ViewModels)
-    └── home_view_model.dart # Home page view model
-```
+- View Most Popular, Most Emailed, and Most Shared articles from NYT
+- Filter articles by time period (1, 7, or 30 days)
+- Pull-to-refresh functionality
+- Error handling and loading states
+- Clean MVVM architecture with built-in Flutter state management
+
+## Setup
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/NicklausKhaw/ArticleAppFlutter.git
+   cd ArticleAppFlutter
+   ```
+
+2. **Install dependencies:**
+   ```bash
+   flutter pub get
+   ```
+
+3. **Run the app:**
+   ```bash
+   flutter run
+   ```
 
 ## Architecture
 
@@ -20,29 +34,9 @@ This project follows the MVVM (Model-View-ViewModel) pattern:
 
 - **Views**: UI components that display data and handle user interactions
 - **ViewModels**: Business logic layer that manages state and provides data to views
-- **Models**: Data models (to be added as needed)
+- **Models**: Data models for articles and API responses
+- **Services**: API service for fetching data from NYT API
 
 ## Dependencies
 
-- `provider: ^6.1.1` - State management for MVVM pattern
-
-## Getting Started
-
-1. Install dependencies:
-   ```bash
-   flutter pub get
-   ```
-
-2. Run the app:
-   ```bash
-   flutter run
-   ```
-
-## Features
-
-- Counter functionality with MVVM architecture
-- Clean separation of concerns between UI and business logic
-- State management using Provider package
-=======
-# ArticleAppFlutter
->>>>>>> 9dc1474278b44b5ac99ea62afa8927af19309a59
+- `http: ^1.1.0` - HTTP requests for API calls
