@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Article App Flutter
 
 A Flutter application built using the MVVM (Model-View-ViewModel) architecture pattern.
@@ -42,3 +43,6 @@ This project follows the MVVM (Model-View-ViewModel) pattern:
 - Counter functionality with MVVM architecture
 - Clean separation of concerns between UI and business logic
 - State management using Provider package
+=======
+# ArticleAppFlutter
+>>>>>>> 9dc1474278b44b5ac99ea62afa8927af19309a59
